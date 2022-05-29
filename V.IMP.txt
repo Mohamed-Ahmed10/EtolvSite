@@ -1,0 +1,31 @@
+1- format folders like this 
+2- npm init
+3- install gulp@3.9.1 ( globally & --save-dev )
+4- install gulp packages and import all in the gulp file
+
+npm i -g gulp-pug 
+npm i -g gulp-sass
+npm i -g gulp-minify
+npm i -g gulp-notify 
+npm i -g gulp-autoprefixer
+npm i -g gulp-livereload 
+npm i -g gulp-sourcemaps 
+npm i -g gulp-concat
+npm i -g gulp-new 
+
+
+--save-dev ( if you in project )
+
+
+5- npm i static-server
+6- put this in package.json cause of autoprefixer
+
+"browserslist": [
+        "last 2 versions",
+        "> 2%"
+    ]
+
+---------------------
+fonts on dist
+css libraries on stage
+
