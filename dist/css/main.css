@@ -1,1 +1,18 @@
-body{box-sizing:border-box}nav{background-color:#d43636}nav .logo{width:70px}nav .nav-item{text-align:center}nav .nav-item .nav-link{color:#fff}nav .nav-item .nav-link.active{color:#1686d6 !important;font-weight:bold}nav .nav-item .nav-link:hover{color:#1686d6 !important}/*# sourceMappingURL=main.css.map */
+body {
+  box-sizing: border-box; }
+
+nav {
+  background-color: #D43636; }
+  nav .logo {
+    width: 70px; }
+  nav .nav-item {
+    text-align: center; }
+    nav .nav-item .nav-link {
+      color: #FFF; }
+      nav .nav-item .nav-link.active {
+        color: #1686D6 !important;
+        font-weight: bold; }
+      nav .nav-item .nav-link:hover {
+        color: #1686D6 !important; }
+
+/*# sourceMappingURL=main.css.map */
