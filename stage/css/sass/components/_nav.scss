@@ -7,6 +7,7 @@ nav {
 
     .nav-item {
         text-align: center;
+        margin-inline-end: 15px;
 
         .nav-link {
             color: $logo_color_Two;
@@ -20,5 +21,21 @@ nav {
                 color: $logo_color_Three !important;
             }
         }
+    }
+
+    .language {
+        text-decoration-line: none;
+        color: $logo_color_Two;
+        font-size: 14px;
+    }
+
+    .social {
+        height: 30px;
+        width: 30px;
+        background: $logo_color_Two;
+        text-align: center;
+        line-height: 30px;
+        border-radius: 50%;
+        margin: 10px;
     }
 }

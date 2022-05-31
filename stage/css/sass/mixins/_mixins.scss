@@ -1,0 +1,15 @@
+@mixin transform($name) {
+    transform: $name;
+    -webkit-transform: $name;
+    -moz-transform: $name;
+    -ms-transform: $name;
+    -o-transform: $name;
+}
+
+@mixin easeTransition {
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}

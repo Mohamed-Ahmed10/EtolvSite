@@ -1,0 +1,76 @@
+.social {
+    position: fixed;
+    right: 0;
+    bottom: 50%;
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        width: 0;
+        overflow: hidden;
+        justify-content: space-around;
+        font-size: 24px;
+        background: #EEE;
+        padding: 5px;
+        margin-bottom: 0;
+        @include easeTransition;
+
+
+        &.show {
+            width: 170px;
+        }
+
+        .facebook {
+            color: #3b5998;
+        }
+
+        .linkedin {
+            color: #0077b5;
+        }
+
+        .mail {
+            color: #D43636
+        }
+
+        .whatsapp {
+            color: #075E54
+        }
+    }
+
+    #show_btn {
+        position: absolute;
+        left: -20px;
+        top: 0;
+        height: 100%;
+        width: 20px;
+        background: $logo_color_one;
+        line-height: 45px;
+        color: #FFF;
+        padding: 3px;
+        cursor: pointer;
+
+
+        i {
+            position: relative;
+            left: 0;
+            animation: hesitate .5s;
+            -webkit-animation: hesitate 1s infinite;
+            @include easeTransition;
+            transform-origin: 50% 44%;
+        }
+
+        .rotate {
+            @include transform(rotate(180deg))
+        }
+    }
+
+    @keyframes hesitate {
+        from {
+            left: 2px;
+        }
+
+        to {
+            left: -2px;
+        }
+    }
+}

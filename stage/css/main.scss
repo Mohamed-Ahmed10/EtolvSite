@@ -4,9 +4,12 @@
 //Global styles
 @import 'sass/layout/global';
 
+// Mixins
+@import './sass/mixins/mixins';
 
 //Components
 @import 'sass/components/nav';
+@import 'sass/components/social';
 
 
 

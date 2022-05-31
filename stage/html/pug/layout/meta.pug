@@ -1,6 +1,3 @@
-//-Search of all of this
-
-
 
 meta(charset="UTF-8")
 
@@ -16,9 +13,9 @@ meta(http-equiv="X-UA-compatible",content="IE=edge")
 
 
 //Site description 
-meta(name="keyword" content="")
-meta(name="author" content="Eng - Mohamed Ahmed")
-meta(name="description" content="this is test site for")
+meta(name="keyword" content="etolv , برامج , سياحة , Web design, Web Hosting, Web Development , Mobile Applications, Seo ,design,Erp,Hosting,Development ")
+meta(name="author" content="Etolv company")
+meta(name="description" content="شركة متخصصة فى برامج ادارة الاعمال و برامج السياحة")
 
 // meta(http-equiv="refresh", content="0; url=index.html")
 //- meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
@@ -31,55 +28,57 @@ meta(name='msapplication-TileImage', content='.')
 meta(content='#', name='theme-color')
 
 //Apple
-//- link(rel='apple-touch-icon', href='.')
+link(rel='apple-touch-icon', href='images/logo.png')
 
 //Open graph protocol Facebook integration
-meta(property='og:site_name', content='')
-meta(property='og:url', content='')
-meta(property='og:locale', content='en_US')
-meta(property='og:description', content='')
-meta(property='og:title', content='')
+meta(property='og:site_name', content='Etolv')
+meta(property='og:url', content='etolv.com')
+meta(property='og:locale', content='ar_EG')
+meta(property='og:description', content='شركة متخصصة فى برامج ادارة الاعمال و برامج السياحة')
+meta(property='og:title', content='etolv.com')
 meta(property='og:type', content='website')
-meta(property='og:image', content='')
+meta(property='og:image', content='./images/logo.com')
 meta(property='og:image:width', content='1200')
 meta(property='og:image:height', content='630')
 
 //Twitter integration
 meta(name='twitter:card', content='summary')
-meta(name='twitter:title', content='')
-meta(name='twitter:image', content='')
+meta(name='twitter:title', content='Etolv')
+meta(name='twitter:image', content='images/logo.png')
 meta(name='twitter:description', content='')
 
-
-
-meta(name='generator', content='Powered by .')
+meta(name='generator', content='Powered by etolv.com')
 
 
 //- images with deferent sizes
-//- link(rel='icon', href='', sizes='32x32')
-//- link(rel='icon', href='', sizes='192x192')
+link(rel='icon', href='images/logo.png', sizes='32x32')
+link(rel='icon', href='images/logo.png', sizes='192x192')
 meta(name='language', content='English')
 //- link(rel='canonical', href='')
 //-search more about
 meta(name='robots', content='index, follow')
 
 
-//- meta(content='en', http-equiv='content-language')
-//- meta(content='text/html;charset=UTF-8', http-equiv='content-type')
-//- meta(content='text/javascript', http-equiv='content-script-type')
-//- meta(content='text/css', http-equiv='content-style-type')
-meta(name='copyright', content='Copyright 2020 mohamedahmed.online, Inc.')
+meta(content='en', http-equiv='content-language')
+meta(content='text/html;charset=UTF-8', http-equiv='content-type')
+meta(content='text/javascript', http-equiv='content-script-type')
+meta(content='text/css', http-equiv='content-style-type')
+meta(name='copyright', content='Copyright 2020 etolv.com, Inc.')
 
-meta(property='article:published_time', content='2020-12-01T00:00:00+01:00')
-meta(property='article:section', content='Personal Section')
-meta(property='article:tag', content='Mohamed Ahmed , devloper , freelancer , website , freelancer , Personal')
-meta(name='image', content='')
-meta(name='twitter:creator', content='@mohamedahmed')
-meta(name='twitter:image:src', content='')
+//- meta(property='article:published_time', content='2022-06-01T00:00:00+01:00')
+//- meta(property='article:section', content='Personal Section')
+//- meta(property='article:tag', content='')
+//- meta(name='image', content='')
+//- meta(name='twitter:creator', content='@etolv')
+//- meta(name='twitter:image:src', content='')
 //-meta(name='google-site-verification', content='0WjAfDj8bLsitcEFtdPEVXTZuxRElT66cnjY936Sftw')
 
 
-
-
 //page title
-title Etolv | #{pageTitle}
+title 
+    if pageTitle == 'Home' 
+        |Etolv | Software solutions
+    else if pageTitle == 'الرئيسية'
+        |Etolv | Software solutions
+    else
+        |Etolv |  #{pageTitle}
