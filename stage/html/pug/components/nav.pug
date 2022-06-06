@@ -1,5 +1,5 @@
--var navItems = ["Home", "About" , "Services" , "Product" , "Clients", "Contacts" ];
--var navItemsAr = ["الرئيسية" ,"عنا" ,"خدماتنا" ,"منتجاتنا" ,"عملائنا", "تواصل معنا" ];
+-var navItems = [["Home", 'index.html'], ["About"] , ["Services"] , ["Product"] , ["Clients"], ["Contacts"]   ];
+-var navItemsAr = [["الرئيسية", 'index-ar.html'] ,["عنا","about.html"] ,["خدماتنا" , "services.html"] ,["منتجاتنا" , "products.html"] ,["عملائنا","clients.html"], ["تواصل معنا","contacts.html"] ];
 nav.navbar.navbar-expand-lg
     .container-fluid
         a.navbar-brand(href='index.html') 
@@ -11,17 +11,17 @@ nav.navbar.navbar-expand-lg
                 ul.navbar-nav.mx-auto.mb-2.mb-lg-0
                     each item in navItems
                         li.nav-item
-                            if pageTitle == item
-                                a.nav-link.active(aria-current='page', href= (item =="Home" ? "index.html" : item.toLowerCase() + ".html") )= item
+                            if pageTitle == item[0]
+                                a.nav-link.active(aria-current='page', href= item[1] ? item[1] : item[0].toLowerCase() + ".html" )= item[0]
                             else
-                                a.nav-link(aria-current='page', href= (item =="Home" ? "index.html" : item.toLowerCase() + ".html"))= item
+                                a.nav-link(aria-current='page', href= item[1] ? item[1] : item[0].toLowerCase() + ".html" )= item[0]
                 a.language(href="index-ar.html") عربى
             else if (lang == "Ar")
                 ul.navbar-nav.mx-auto.mb-2.mb-lg-0
-                    each item , index in navItemsAr
+                    each item in navItemsAr
                         li.nav-item
                             if pageTitle == item
-                                a.nav-link.active(aria-current='page', href= (item =="Home" ? "index.html" : item + ".html") )= item
+                                a.nav-link.active(aria-current='page', href= item[1] ? item[1] : item[0].toLowerCase() + "-ar.html" )= item[0]
                             else
-                                a.nav-link(aria-current='page', href= (item == navItemsAr[0] ? "index-ar.html" : navItems[index].toLowerCase() + "-ar.html"))= item
+                                a.nav-link(aria-current='page', href= item[1] ? item[1] : item[0].toLowerCase() + "-ar.html" )= item[0]
                 a.language(href="index.html") English
