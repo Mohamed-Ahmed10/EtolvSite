@@ -1,5 +1,71 @@
+*::selection {
+    color: $logo_color_Two;
+    background-color: $logo_color_one
+}
+
 body {
     box-sizing: border-box;
     font-family: 'Cairo', sans-serif;
-    height: 8000px;
+}
+
+.colorize {
+    color: $logo_color_one
+}
+
+section {
+    padding: 40px 0;
+
+    .content {
+        margin-top: 70px;
+
+        .section_description {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+        }
+    }
+}
+
+
+.dark {
+    background-color: #EEE
+}
+
+.social {
+    li {
+        background: #FFF;
+        margin: 0 20px;
+        padding: 4px;
+        height: 30px;
+        width: 30px;
+        text-align: center;
+        border-radius: 50%;
+    }
+}
+
+.facebook {
+
+    @include socialMedia(#3b5998);
+    @include easeTransition(.75s);
+}
+
+.linkedin {
+
+    @include socialMedia(#0077b5);
+    @include easeTransition(.75s);
+
+}
+
+.mail {
+    @include socialMedia(#D43636);
+    @include easeTransition(.75s);
+
+}
+
+.whatsapp {
+
+    @include socialMedia(#075E54);
+    @include easeTransition(.75s);
+
 }

@@ -8,8 +8,11 @@ html(lang="ar")
         include pug/layout/fonts
         include pug/layout/styles
     body
-        section.home-page
-        include pug/components/nav
-        include pug/components/contacts
-        include pug/components/header
-        include pug/layout/scripts
+        .home-page-ar
+            include pug/components/nav
+            include pug/components/contacts-popup
+            include pug/components/header
+            include pug/sections/whyUs
+            include pug/sections/services
+            include pug/components/footer
+            include pug/layout/scripts

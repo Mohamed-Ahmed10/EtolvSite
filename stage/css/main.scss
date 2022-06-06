@@ -1,16 +1,22 @@
 //Variables
 @import './sass/variables/variables';
 
-//Global styles
-@import 'sass/layout/global';
+
 
 // Mixins
 @import './sass/mixins/mixins';
 
+//Global styles
+@import 'sass/layout/global';
+
+
 //Components
 @import 'sass/components/nav';
-@import 'sass/components/social';
+@import 'sass/components/contacts_popup';
 @import 'sass/components/header';
+@import 'sass/components/services';
+@import 'sass/components/footer';
+
 
 //Pages
 @import './sass/views/home';

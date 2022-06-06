@@ -1,4 +1,4 @@
-- var pageTitle = 'Product';
+- var pageTitle = 'Products';
 -var lang = 'En';
 <!DOCTYPE html>
 include pug/layout/IE-HTML
@@ -8,7 +8,7 @@ html(lang="en")
         include pug/layout/fonts
         include pug/layout/styles
     body
-        section.home-page
-        include pug/components/nav
-        include pug/components/contacts
-        include pug/layout/scripts
+        .product
+            include pug/components/nav
+            include pug/components/contacts-popup
+            include pug/layout/scripts

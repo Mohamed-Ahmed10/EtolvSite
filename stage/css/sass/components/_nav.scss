@@ -1,8 +1,11 @@
 nav {
     background-color: $logo_color_one;
+    position: sticky !important;
+    top: 0;
+    z-index: 3;
 
     .logo {
-        width: 70px;
+        width: 130px;
     }
 
     .nav-item {
@@ -13,8 +16,9 @@ nav {
             color: $logo_color_Two;
 
             &.active {
-                color: $logo_color_Three !important;
-                font-weight: bold;
+                color: $logo_color_Two;
+                font-weight: 900;
+                text-shadow: 4px 2px 7px $logo_color_Three;
             }
 
             &:hover {
@@ -27,6 +31,7 @@ nav {
         text-decoration-line: none;
         color: $logo_color_Two;
         font-size: 14px;
+        margin-inline-end: 10px;
     }
 
     .social {

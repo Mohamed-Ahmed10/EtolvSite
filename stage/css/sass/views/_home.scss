@@ -1,5 +1,4 @@
 #why {
-    display: flex;
     line-height: 2.5;
 
     @media (max-width: 575.98px) {
@@ -16,6 +15,7 @@
 
     .left {
         width: 50%;
+        padding: 80px;
 
         @media (max-width: 576px) {
             width: 100%;

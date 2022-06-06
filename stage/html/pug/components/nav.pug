@@ -1,9 +1,9 @@
--var navItems = [["Home", 'index.html'], ["About"] , ["Services"] , ["Product"] , ["Clients"], ["Contacts"]   ];
--var navItemsAr = [["الرئيسية", 'index-ar.html'] ,["عنا","about.html"] ,["خدماتنا" , "services.html"] ,["منتجاتنا" , "products.html"] ,["عملائنا","clients.html"], ["تواصل معنا","contacts.html"] ];
+-var navItems = [["Home", 'index.html'], ["About"] , ["Services"] , ["Products"] , ["Clients"], ["Contacts"]   ];
+-var navItemsAr = [["الرئيسية", 'index-ar.html'] ,["عنا","about-ar.html"] ,["خدماتنا" , "services-ar.html"] ,["منتجاتنا" , "products-ar.html"] ,["عملائنا","clients-ar.html"], ["تواصل معنا","contacts-ar.html"] ];
 nav.navbar.navbar-expand-lg
     .container-fluid
-        a.navbar-brand(href='index.html') 
-            img.logo(src="images/logo.png", alt="Etolv logo")
+        a.navbar-brand(href= lang == 'En' ? 'index.html' : 'index-ar.html') 
+            img.logo(src="images/logos/logo-transparent.png", alt="Etolv logo")
         button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
             span.navbar-toggler-icon
         #navbarSupportedContent.collapse.navbar-collapse
@@ -15,13 +15,17 @@ nav.navbar.navbar-expand-lg
                                 a.nav-link.active(aria-current='page', href= item[1] ? item[1] : item[0].toLowerCase() + ".html" )= item[0]
                             else
                                 a.nav-link(aria-current='page', href= item[1] ? item[1] : item[0].toLowerCase() + ".html" )= item[0]
-                a.language(href="index-ar.html") عربى
+                each item , index  in navItems
+                    if(item[0] == pageTitle )
+                        a.language(href= navItemsAr[index][1] ) عربى
             else if (lang == "Ar")
                 ul.navbar-nav.mx-auto.mb-2.mb-lg-0
                     each item in navItemsAr
                         li.nav-item
-                            if pageTitle == item
+                            if pageTitle == item[0]
                                 a.nav-link.active(aria-current='page', href= item[1] ? item[1] : item[0].toLowerCase() + "-ar.html" )= item[0]
                             else
                                 a.nav-link(aria-current='page', href= item[1] ? item[1] : item[0].toLowerCase() + "-ar.html" )= item[0]
-                a.language(href="index.html") English
+                each item , index in navItemsAr
+                    if(item[0] == pageTitle)
+                        a.language(href =  navItems[index][1] ? navItems[index][1] : (navItems[index][0]).toLowerCase() + '.html') English

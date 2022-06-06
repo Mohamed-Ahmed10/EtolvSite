@@ -1,8 +1,12 @@
-.social {
+#contacts_small {
     position: fixed;
     right: 0;
     bottom: 50%;
     z-index: 3;
+
+    @media (max-width: 575.98px) {
+        display: none;
+    }
 
     ul {
         list-style-type: none;
@@ -14,38 +18,27 @@
         background: #EEE;
         padding: 5px;
         margin-bottom: 0;
-        @include easeTransition;
-
+        @include easeTransition(.5s);
 
         &.show {
-            width: 170px;
+            width: 200px;
         }
 
-        .facebook {
-            color: #3b5998;
-        }
-
-        .linkedin {
-            color: #0077b5;
-        }
-
-        .mail {
-            color: #D43636
-        }
-
-        .whatsapp {
-            color: #075E54
+        li {
+            height: 40px;
+            width: 40px;
+            margin: 0 5px;
         }
     }
 
     #show_btn {
         position: absolute;
-        left: -20px;
+        left: -25px;
         top: 0;
         height: 100%;
-        width: 20px;
+        width: 25px;
         background: $logo_color_one;
-        line-height: 45px;
+        line-height: 50px;
         color: #FFF;
         padding: 3px;
         cursor: pointer;
@@ -56,7 +49,7 @@
             left: 0;
             animation: hesitate .5s;
             -webkit-animation: hesitate 1s infinite;
-            @include easeTransition;
+            @include easeTransition(.5s);
             transform-origin: 50% 44%;
         }
 
@@ -66,12 +59,14 @@
     }
 
     @keyframes hesitate {
-        from {
-            left: 2px;
+
+        0%,
+        100% {
+            left: 0px;
         }
 
-        to {
-            left: -2px;
+        50% {
+            left: -6px;
         }
     }
 }
