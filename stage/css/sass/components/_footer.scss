@@ -8,10 +8,18 @@ footer {
     ul {
         list-style: none;
         display: flex;
+        margin-top: 20px;
 
         &.social {
             li {
                 margin: 0 5px;
+            }
+        }
+
+        &:not(.social) {
+            li:hover {
+                color: $logo_color_one;
+                font-weight: bold;
             }
         }
     }
