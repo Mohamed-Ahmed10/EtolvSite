@@ -1,0 +1,72 @@
+#contacts_small {
+    position: fixed;
+    right: 0;
+    bottom: 50%;
+    z-index: 3;
+
+    @media (max-width: 575.98px) {
+        display: none;
+    }
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        width: 0;
+        overflow: hidden;
+        justify-content: space-around;
+        font-size: 24px;
+        background: #EEE;
+        padding: 5px;
+        margin-bottom: 0;
+        @include easeTransition(.5s);
+
+        &.show {
+            width: 200px;
+        }
+
+        li {
+            height: 40px;
+            width: 40px;
+            margin: 0 5px;
+        }
+    }
+
+    #show_btn {
+        position: absolute;
+        left: -25px;
+        top: 0;
+        height: 100%;
+        width: 25px;
+        background: $logo_color_one;
+        line-height: 50px;
+        color: #FFF;
+        padding: 3px;
+        cursor: pointer;
+
+
+        i {
+            position: relative;
+            left: 0;
+            animation: hesitate .5s;
+            -webkit-animation: hesitate 1s infinite;
+            @include easeTransition(.5s);
+            transform-origin: 50% 44%;
+        }
+
+        .rotate {
+            @include transform(rotate(180deg))
+        }
+    }
+
+    @keyframes hesitate {
+
+        0%,
+        100% {
+            left: 3px;
+        }
+
+        50% {
+            left: -3px;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+@import './sass/variables/_variables.scss';
+
+body {
+    direction: rtl;
+}
+
+section ul li::before {
+    content: "\f060";
+}

@@ -1,0 +1,18 @@
+footer {
+    padding: 40px 0;
+    background-color: #333333;
+    color: #FFF;
+    font-weight: 400;
+    margin-top: 40px;
+
+    ul {
+        list-style: none;
+        display: flex;
+
+        &.social {
+            li {
+                margin: 0 5px;
+            }
+        }
+    }
+}
