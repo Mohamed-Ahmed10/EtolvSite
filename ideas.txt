@@ -1,3 +1,0 @@
-1 - reload
-2 - Js ideas
-3 - context menu
