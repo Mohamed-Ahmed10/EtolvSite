@@ -18,7 +18,8 @@ nav {
             &.active {
                 color: $logo_color_Two;
                 font-weight: 900;
-                text-shadow: 4px 2px 7px $logo_color_Three;
+                // text-shadow: 4px 2px 7px $logo_color_Three;
+                border: 1px solid;
             }
 
             &:hover {

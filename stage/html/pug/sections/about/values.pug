@@ -1,0 +1,27 @@
+section#values
+    if(lang == "En")
+        h2.fw-bold.text-center
+            span.colorize Our 
+            | values
+    else if(lang == "Ar")
+        h2.fw-bold.text-center
+            span.colorize قيمنا
+    .container 
+        .row.content
+            .section_image.col
+                    img.img-fluid(src="images/about/values.svg", alt="why us image")
+            .section_description.col
+                if(lang == "En")
+                    ul
+                        li test
+                        li test
+                        li test
+                        li test
+                        li test
+                else if(lang == "Ar")
+                    ul
+                        li تست
+                        li تست
+                        li تست
+                        li تست
+                        li تست

@@ -1,0 +1,19 @@
+section#strategy.dark
+    if(lang == "En")
+        h2.fw-bold.text-center
+            span.colorize Our 
+            | strategy
+    else if(lang == "Ar")
+        h2.fw-bold.text-center
+            span.colorize خططنا
+    .container 
+        .row.content
+            .section_description.col
+                if(lang == "En")
+                    p 
+                    |Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolor maxime sit et, adipisci corrupti error voluptates recusandae vero, vitae velit, aliquam consequatur iste porro at. Excepturi laborum debitis consequatur.
+                else if(lang == "Ar")
+                    p
+                    |لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبورأنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستري 
+            .section_image.col
+                img.img-fluid(src="images/about/strategy.svg", alt="why us image")
