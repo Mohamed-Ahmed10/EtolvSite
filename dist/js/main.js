@@ -6,7 +6,6 @@ showBtn.onclick = function () {
 };
 
 
-
 const { gsap, imagesLoaded } = window;
 
 const buttons = {

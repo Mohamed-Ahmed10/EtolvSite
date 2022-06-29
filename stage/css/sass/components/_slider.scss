@@ -1,19 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap");
-:root {
-	--card-width: 200px;
-	--card-height: 300px;
+
+.app {
+
+    --card-width: 290px;
+    --card-height: 200px;
 
 	--card-transition-duration: 800ms;
 	--card-transition-easing: ease;
-}
 
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
+        
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
-button {
+    button {
 	border: none;
 	background: none;
 	cursor: pointer;
@@ -22,15 +24,6 @@ button {
 		border: none;
 	}
 }
-
-.app {
-	position: relative;
-	width: 100%;
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
 	&__bg {
 		position: absolute;
 		width: 100%;
@@ -64,9 +57,9 @@ button {
 			overflow: hidden;
 
 			img {
-				width: 100%;
-				height: 100%;
-				object-fit: cover;
+                width: 100%;
+                padding: 22%;
+                object-fit: cover;
 			}
 			&.current--image {
 				opacity: 1;
@@ -167,12 +160,12 @@ button {
             position: relative;
             width: 100%;
             height: 100%;
+            overflow: hidden;
             img {
                 position: absolute;
                 left: 0;
-                top: 0;
+                top: 20%;
                 width: 100%;
-                height: 100%;
                 object-fit: cover;
             }
         }
@@ -215,8 +208,9 @@ button {
             display: flex;
             justify-content: flex-start;
             align-items: flex-end;
-        perspective: 1000px;
-        transform-style: preserve-3d;
+            perspective: 1000px;
+            transform-style: preserve-3d;
+            direction: ltr;
         }
     }
     
@@ -279,6 +273,15 @@ button {
         &.current--info {
             opacity: 1;
             display: block;
+            background: #eeeeee70;
+            padding: 10px;
+            
+            > h1 ,
+            > h4 ,
+            > p
+            {
+                color: $logo_color_one;
+            }
         }
         &.previous--info,
         &.next--info {
