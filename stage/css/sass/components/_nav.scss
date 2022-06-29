@@ -13,18 +13,18 @@ nav {
         margin-inline-end: 15px;
 
         .nav-link {
-            color: $logo_color_Two;
+            color: $logo_color_two;
 
             &.active {
-                color: $logo_color_Two;
+                color: $logo_color_two;
                 font-weight: 900;
-                // text-shadow: 4px 2px 7px $logo_color_Three;
+                // text-shadow: 4px 2px 7px $logo_color_three;
                 border: 1px solid;
             }
 
             &:hover {
                 color: $logo_color_one !important;
-                background-color: $logo_color_Two;
+                background-color: $logo_color_two;
                 transform: scale(1.1);
             }
         }
@@ -32,7 +32,7 @@ nav {
 
     .language {
         text-decoration-line: none;
-        color: $logo_color_Two;
+        color: $logo_color_two;
         font-size: 14px;
         margin-inline-end: 10px;
     }
@@ -40,7 +40,7 @@ nav {
     .social {
         height: 30px;
         width: 30px;
-        background: $logo_color_Two;
+        background: $logo_color_two;
         text-align: center;
         line-height: 30px;
         border-radius: 50%;

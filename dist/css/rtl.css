@@ -1,9 +1,1 @@
-body {
-  direction: rtl;
-}
-
-section ul li::before {
-  content: "\f060";
-}
-
-/*# sourceMappingURL=rtl.css.map */
+﻿body{direction:rtl}section ul li::before{content:""}/*# sourceMappingURL=rtl.css.map */

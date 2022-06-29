@@ -5,11 +5,7 @@ showBtn.onclick = function () {
     this.children[0].classList.toggle("rotate");
 };
 
-$("body").niceScroll({
-    cursorcolor: "#D43636",
-    cursorwidth: "15px",
-    background: "#CCC",
-});
+
 
 const { gsap, imagesLoaded } = window;
 
