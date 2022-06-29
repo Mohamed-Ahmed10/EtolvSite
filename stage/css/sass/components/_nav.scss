@@ -23,7 +23,8 @@ nav {
             }
 
             &:hover {
-                color: $logo_color_Three !important;
+                color: $logo_color_one !important;
+                background-color: $logo_color_Two;
                 transform: scale(1.1);
             }
         }
