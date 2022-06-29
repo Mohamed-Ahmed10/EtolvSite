@@ -1,7 +1,1 @@
-{
-"version": 3,
-"mappings": "AAEA,IAAK,CACD,SAAS,CAAE,GAAG,CAGlB,qBAAsB,CAClB,OAAO,CAAE,OAAO",
-"sources": ["../../stage/css/rtl.scss"],
-"names": [],
-"file": "rtl.css"
-}
+{"version":3,"sourceRoot":"","sources":["../../stage/css/rtl.scss"],"names":[],"mappings":"AAEA;EACI;;;AAGJ;EACI","file":"rtl.css"}

@@ -1,0 +1,50 @@
+.app
+  .cardList
+    button.carouselButton.cardList__btn.btn.btn--left(aria-label="left")
+      .icon
+        svg
+          use(xlink:href='#arrow-left')
+    .cards__wrapper
+      .card.current--card
+        .card__image
+          img(src='https://source.unsplash.com/Z8dtTatMVMw' alt='')
+      .card.next--card
+        .card__image
+          img(src='https://source.unsplash.com/9dmycbFE7mQ' alt='')
+      .card.previous--card
+        .card__image
+          img(src='https://source.unsplash.com/m7K4KzL5aQ8' alt='')
+    button.carouselButton.cardList__btn.btn.btn--right(aria-label="right")
+      .icon
+        svg
+          use(xlink:href='#arrow-right')
+  .infoList
+    .info__wrapper
+      .info.current--info
+        h1.text.name Highlands
+        h4.text.location Scotland
+        p.text.description The mountains are calling
+      .info.next--info
+        h1.text.name Machu Pichu
+        h4.text.location Peru
+        p.text.description Adventure is never far away
+      .info.previous--info
+        h1.text.name Chamonix
+        h4.text.location France
+        p.text.description Let your dreams come true
+  .app__bg
+    .app__bg__image.current--image
+      img(src='https://source.unsplash.com/Z8dtTatMVMw' alt='')
+    .app__bg__image.next--image
+      img(src='https://source.unsplash.com/9dmycbFE7mQ' alt='')
+    .app__bg__image.previous--image
+      img(src='https://source.unsplash.com/m7K4KzL5aQ8' alt='')
+.loading__wrapper
+  .loader--text Loading...
+  .loader
+    span
+svg.icons(style='display: none;')
+  symbol#arrow-left(xmlns='http://www.w3.org/2000/svg' viewbox='0 0 512 512')
+    polyline(points='328 112 184 256 328 400' style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px')
+  symbol#arrow-right(xmlns='http://www.w3.org/2000/svg' viewbox='0 0 512 512')
+    polyline(points='184 112 328 256 184 400' style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px')

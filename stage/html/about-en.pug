@@ -1,14 +1,18 @@
--var pageTitle = 'تواصل معنا';
--var lang = 'Ar';
+- var pageTitle = 'About';
+-var lang = 'En';
 <!DOCTYPE html>
 include pug/layout/IE-HTML
-html(lang="ar")
+html(lang="en")
     head
         include pug/layout/meta
         include pug/layout/fonts
         include pug/layout/styles
     body
-        .contacts-ar
+        .about
             include pug/components/nav
             include pug/components/contacts-popup
+            include pug/sections/about/goals
+            include pug/sections/about/strategy
+            include pug/sections/about/values
+            include pug/components/footer
             include pug/layout/scripts

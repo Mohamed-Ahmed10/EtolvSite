@@ -1,18 +1,14 @@
--var pageTitle = 'الرئيسية';
--var lang = 'Ar';
+- var pageTitle = 'Contacts';
+-var lang = 'En';
 <!DOCTYPE html>
 include pug/layout/IE-HTML
-html(lang="ar")
+html(lang="en")
     head
         include pug/layout/meta
         include pug/layout/fonts
         include pug/layout/styles
     body
-        .home-page-ar
+        .contacts
             include pug/components/nav
             include pug/components/contacts-popup
-            include pug/components/header
-            include pug/sections/whyUs
-            include pug/sections/services
-            include pug/components/footer
             include pug/layout/scripts
