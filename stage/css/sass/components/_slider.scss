@@ -16,9 +16,6 @@
 	align-items: center;
 
     button {
-	border: none;
-	background: none;
-	cursor: pointer;
 	&:focus {
 		outline: none;
 		border: none;
@@ -273,8 +270,10 @@
         &.current--info {
             opacity: 1;
             display: block;
-            background: #eeeeee70;
+            background: rgb(50 50 50 / 80%);
+            border: 1px solid $logo_color_two ;
             padding: 10px;
+            border-radius: 5px;
             
             > h1 ,
             > h4 ,
