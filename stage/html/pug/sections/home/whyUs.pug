@@ -1,17 +1,17 @@
 section#why.dark
     if(lang == "En")
-        h2.fw-bold.text-center
+        h2.fw-bold.text-center.my-3
             span.colorize Why 
             | Us
     else if(lang == "Ar")
-        h2.fw-bold.text-center
+        h2.fw-bold.text-center.my-3
             span.colorize لماذا 
             | نحن؟
     .container 
         .row.content
-            .section_image.col
+            .section_image.col-md-6.col-sm-12
                 img.img-fluid(src="images/why_us.svg", alt="why us image")
-            .section_description.col
+            .section_description.col-md-6.col-sm-12
                 if(lang == "En")
                     ul
                         li Quality – We aim for perfection .
