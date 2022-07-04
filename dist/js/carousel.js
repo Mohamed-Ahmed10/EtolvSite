@@ -1,3 +1,5 @@
+
+
 const { gsap, imagesLoaded } = window;
 
 const buttons = {
@@ -179,7 +181,7 @@ function init() {
   let tl = gsap.timeline();
 
   tl.to(cardsContainerEl.children, {
-    delay: 0.15,
+    delay: 3 ,
     duration: 0.5,
     stagger: {
       ease: "power4.inOut",
@@ -262,3 +264,4 @@ const waitForImages = () => {
 };
 
 waitForImages();
+
