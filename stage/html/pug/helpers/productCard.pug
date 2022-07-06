@@ -1,0 +1,30 @@
+mixin productCard($product_title , $product_title_arabic , $product_category  , $product_category_arabic, $product_description , $product_description_arabic , $img_src , $img_alternative )
+  main
+    .card
+      .card_body
+        .half
+          .featured_text
+            if(lang == "Ar")
+              h1= $product_title_arabic
+              p.sub= $product_category_arabic
+            else 
+              h1= $product_title
+              p.sub= $product_category
+          .image
+            img(src= $img_src  , alt= $img_alternative)
+        .half
+          .description
+            if(lang == "Ar")
+              p= $product_description_arabic
+            else 
+              p= $product_description
+      .card__footer
+        .recommend
+          p Recommended by
+          h3 Andrew Palmer
+        .action
+          button(type='button') Add to cart
+
+
++productCard("Title", "بالعربى" , "cat" , "بالعربى 2" , "desc" , "بالعربى 3" , "./images/products/trio-travel.png" , "TRIO" )
++productCard("Title", "بالعربى" , "cat" , "بالعربى 2" , "desc" , "بالعربى 3" , "./images/products/trio-travel.png" , "TRIO" )
